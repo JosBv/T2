@@ -10,6 +10,8 @@ def tiene_vocal(palabra):
     return False
 
 def contar_con_vocales(matriz):
+    if not matriz or not matriz[0]:
+        return 0
     filas = len(matriz)
     columnas = len(matriz[0])
     if filas == 1 and columnas == 1:
